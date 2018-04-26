@@ -1,0 +1,60 @@
+.btn-group {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.btn-group .btn {
+  border-radius: 0em;
+  border: 0;
+}
+
+.btn-group .btn.active {
+  box-shadow: none;
+  background: white;
+  border: 1px solid lightgray;
+  border-bottom: 0;
+  margin-bottom: -1px;
+}
+
+.table {
+  margin-top: 25px;
+}
+
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+.minion-icon {
+  margin: 0;
+  padding: 0;
+  margin-right: 0.25rem;
+}
+
+.fight-result {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(200,0,0,0.3);
+  text-align: center;
+  padding-top: 33%;
+  font-weight: bold;
+  font-size: 3rem;
+  color: rgb(200,0,0);
+  padding-left: 33%;
+}
+.fight-lost {
+  background: rgba(200,0,0,0.3);
+  color: rgb(200,0,0);
+}
+
+.fight-won {
+  background: rgba(0,200,0,0.3);
+  color: rgb(0,200,0);
+}
+
+.fight-draw {
+  background: rgba(200,200,0,0.3);
+  color: rgb(200,200,0);
+}
