@@ -8,7 +8,7 @@ app.factory('BMI', function() {
         return options;
       },
       getHappiness: function() {
-      	return 0;
+      	return 70;
       }
     };
 });

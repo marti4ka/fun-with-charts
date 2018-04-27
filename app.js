@@ -30,11 +30,11 @@ app.controller('MainController', function($scope, $injector) {
       }
     });
   });
-  
+
   //--------------- DEMO starting here ------------------------------------------
 
   $scope.bmi = {
-    type: 'BarChart', // 
+    type: 'BarChart', //
     options: {},
     data: {
       cols: [
@@ -86,7 +86,7 @@ app.controller('MainController', function($scope, $injector) {
         {c: [ {v: 'Raj'}, {v: 68}, {v: 170}, {v: 68/1.7/1.7} ]}
     ]}
   };
-  
+
   $scope.bmi = {
     type: 'BubbleChart',
     options: $scope.charts['BMI'].getOptions(),
@@ -108,6 +108,13 @@ app.controller('MainController', function($scope, $injector) {
   };
 
   // this is the code for the gauge chart
+  var happiness = $scope.charts['BMI'].getHappiness();
+  happiness += $scope.charts['gauge'].getHappiness();
+  happiness += $scope.charts['population'].getHappiness();
+  happiness += $scope.charts['timeline'].getHappiness();
+  happiness += $scope.charts['weather'].getHappiness();
+  happiness /= 5;
+
   $scope.gauge = {
     type: 'Gauge',
     options: $scope.charts['gauge'].getOptions(),
@@ -117,7 +124,7 @@ app.controller('MainController', function($scope, $injector) {
         { label: 'value', type: 'number' }
       ],
       rows: [
-        {c: [ {v: 'Pressure'}, {v:  80 }]}
+        {c: [ {v: 'Happiness'}, {v: happiness  }]}
       ]
     }
   };
