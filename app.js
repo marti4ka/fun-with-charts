@@ -50,7 +50,7 @@ app.controller('MainController', function($scope, $injector) {
     ]}
   };
 
-  $scope.bmi2 = {
+  $scope.bmi = {
     type: 'BubbleChart',
     options: {},
     data: {
