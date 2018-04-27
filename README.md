@@ -4,7 +4,7 @@
  - about me
  - use GitHub pages & a simple js project
 2. **[Google Charts](https://developers.google.com/chart/)**
- - Example: BMI calculator (bubble chart with sliders)
+ - Example: BMI chart
 3. **Exercise**
  - timeline: some wars
  - line chart: Daily max temperature vs. Daily min temperature for every month for [San Francisco](https://en.wikipedia.org/wiki/San_Francisco)
