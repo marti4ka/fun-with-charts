@@ -51,7 +51,7 @@ app.controller('MainController', function($scope, $injector) {
   };
 
   $scope.bmi = {
-    type: 'BubbleChart',
+    type: 'BarChart',
     options: {},
     data: {
       cols: [
