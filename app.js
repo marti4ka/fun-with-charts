@@ -30,28 +30,29 @@ app.controller('MainController', function($scope, $injector) {
       }
     });
   });
+  
+  //--------------- DEMO starting here ------------------------------------------
 
   $scope.bmi = {
     type: 'ColumnChart', // BarChart
-    options: $scope.charts['BMI'].getOptions(),
+    options: {},
     data: {
       cols: [
         {label: "ID", type: "string"},
-        {label: "weght", type: "number"},
-        {label: "height", type: "number"}
+        {label: "weght", type: "number"}
       ],
       rows: [
-        {c: [ {v: 'Sheldon'}, {v: 65}, {v: 188} ]},
-        {c: [ {v: 'Penny'}, {v: 50}, {v: 160} ]},
-        {c: [ {v: 'Howard'}, {v: 45}, {v: 157} ]},
-        {c: [ {v: 'Leonard'}, {v: 70}, {v: 163} ]},
+        {c: [ {v: 'Sheldon'}, {v: 65} ]},
+        {c: [ {v: 'Penny'}, {v: 50} ]},
+        {c: [ {v: 'Howard'}, {v: 45} ]},
+        {c: [ {v: 'Leonard'}, {v: 70} ]},
         {c: [ {v: 'Raj'}, {v: 68}, {v: 170} ]}
     ]}
   };
 
   $scope.bmi2 = {
     type: 'BubbleChart',
-    options: $scope.charts['BMI'].getOptions(),
+    options: {},
     data: {
       cols: [
         {label: "ID", type: "string"},
@@ -83,6 +84,26 @@ app.controller('MainController', function($scope, $injector) {
         {c: [ {v: 'Howard'}, {v: 45}, {v: 157}, {v: 45/1.57/1.57} ]},
         {c: [ {v: 'Leonard'}, {v: 70}, {v: 163}, {v: 70/1.63/1.63} ]},
         {c: [ {v: 'Raj'}, {v: 68}, {v: 170}, {v: 68/1.7/1.7} ]}
+    ]}
+  };
+  
+  $scope.bmi4 = {
+    type: 'BubbleChart',
+    options: $scope.charts['BMI'].getOptions(),
+    data: {
+      cols: [
+        {label: "ID", type: "string"},
+        {label: "weght", type: "number"},
+        {label: "height", type: "number"},
+        {label: "bmi", type: "number"},
+        {label: "Graduated school", type: "number"}
+      ],
+      rows: [
+        {c: [ {v: 'Sheldon'}, {v: 65}, {v: 188}, {v: 65/1.88/1.88}, {v: 10} ]},
+        {c: [ {v: 'Penny'}, {v: 50}, {v: 160}, {v: 50/1.6/1.6}, {v: 30} ]},
+        {c: [ {v: 'Howard'}, {v: 45}, {v: 157}, {v: 45/1.57/1.57}, {v: 15} ]},
+        {c: [ {v: 'Leonard'}, {v: 70}, {v: 163}, {v: 70/1.63/1.63}, {v: 13} ]},
+        {c: [ {v: 'Raj'}, {v: 68}, {v: 170}, {v: 68/1.7/1.7}, {v: 15} ]}
     ]}
   };
 
