@@ -1,12 +1,17 @@
 app.factory('gauge', function() {
     return {
         getOptions: function() {
-            return {};
+          // Insert options here
+          // refer to: https://developers.google.com/chart/interactive/docs/gallery/gauge
+            var options = {
+              width: 400, height: 400,
+              redFrom: 90, redTo: 100,
+              yellowFrom:75, yellowTo: 90,
+              minorTicks: 5
+            };
+            return options;
         },
-        getData: function() {
-            return {};
-        },
-        getHappiness: function() {
+        getHappinessPercent: function() {
         	return 0;
         }
     };

@@ -32,18 +32,16 @@
       <h1>Fun With Charts</h1><br /><br />
 
       <div class="btn-group">
-          <label class="btn btn-default" ng-model="radioModel" uib-btn-radio="'Table'">Table</label>
+          <label class="btn btn-default" ng-model="radioModel" uib-btn-radio="'Table'">Demo</label>
           <label class="btn btn-default" ng-model="radioModel" uib-btn-radio="'Graphs'">Charts</label>
       </div>
 
       <div ng-show="radioModel === 'Table'">
-        BMI Calculator
+        <div google-chart chart="bmi"></div>
+        <br />
       </div>
 
       <div ng-show="radioModel === 'Graphs'">
-        <div google-chart chart="bmi"></div>
-        <br />
-
         <div google-chart chart="population"></div>
         <br />
 

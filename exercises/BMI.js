@@ -1,16 +1,15 @@
 app.factory('BMI', function() {
     return {
-      getType: function() {
-        return 'BubbleChart';
-      },
       getOptions: function() {
         var options = {
-          title: 'BMI Calculator'
+          title: 'BMI',
+          height: 400,
+          width: 1000,
+          // hAxis: { title: 'Weight'},
+          // vAxis: { title: 'Height'},
+          // colorAxis: {colors: ['green', 'red']}
         };
         return options;
-      },
-      getData: function() {
-        return {};
       },
       getHappiness: function() {
       	return 0;
