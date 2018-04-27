@@ -34,7 +34,7 @@ app.controller('MainController', function($scope, $injector) {
   //--------------- DEMO starting here ------------------------------------------
 
   $scope.bmi = {
-    type: 'ColumnChart', // BarChart
+    type: 'BarChart', // 
     options: {},
     data: {
       cols: [
