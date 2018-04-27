@@ -2,7 +2,7 @@ app.factory('weather', function() {
     return {
         getOptions: function() {
             var options = {
-                backgroundColor: yellow
+                backgroundColor: 'yellow'
             };
             return options;
         },
